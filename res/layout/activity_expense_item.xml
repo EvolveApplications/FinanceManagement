@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	
+    <EditText
+        android:id="@+id/txtItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/item_name" >
+        <requestFocus />
+    </EditText>
+	
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        android:hint="@string/max_amount" >
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/rdAmountGroup"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="30dp" >
+
+        <RadioButton
+            android:id="@+id/rdCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/cash"
+            android:layout_margin="20dp" />
+
+        <RadioButton
+            android:id="@+id/rdCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/card"
+            android:layout_margin="20dp"
+            android:checked="true" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="done"
+        android:text="@string/done" />
+
+</LinearLayout>

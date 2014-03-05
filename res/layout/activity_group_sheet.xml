@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/txtSheetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/name" >
+        <requestFocus />
+    </EditText>
+    
+    <Button
+        android:id="@+id/btnPersonDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/personal_details"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showPersonDetails" />
+    
+    <Button
+        android:id="@+id/btnExpenseDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/expense_details"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showExpenseDetails" />
+    
+    <Button
+        android:id="@+id/btnSetSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/set"
+        android:layout_gravity="center_horizontal"
+        android:onClick="setSheet" />
+
+</LinearLayout>
